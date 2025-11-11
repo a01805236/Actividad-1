@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string nombre;
+    float calificacion1, calificacion2, calificacion3, promedio;
+
+    cout << "Introduce el nombre del alumno: ";
+    getline(cin, nombre); // permite leer nombres con espacios
+
+    cout << "Introduce la primera calificación: ";
+    cin >> calificacion1;
+
+    cout << "Introduce la segunda calificación: ";
+    cin >> calificacion2;
+
+    cout << "Introduce la tercera calificación: ";
+    cin >> calificacion3;
+
+    promedio = (calificacion1 + calificacion2 + calificacion3) / 3;
+
+    cout << "El promedio de " << nombre << " es: " << promedio << endl;
+
+    return 0;
+}
